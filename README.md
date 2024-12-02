@@ -21,10 +21,14 @@ No setup is needed to explore these web applications.
 
 ### Interface 2  
 - **Model Summary**: Summarizes each model using a dropdown feature.  
-- **Dataset Info**: Provides key dataset information.  
+- **Dataset Info**: Provides key dataset information.
 - **Model Checking Visualization**: Displays the fit between observed data and model predictions for a specific model. Users can naviagte across models by clicking a button to activate the visualization.
 - **Pointwise Model Compatibility**: Highlights data points with the highest log-likelihood ratios using a flickering effect, indicating that these points strongly distinguish between competing models.
 - **Prior Predictive Check**: Compares observed data with hypothetical data generated from author-defined priors, enabling exploration of prior assumptions.
 - **Belief Updating**: Enables users to input model weights reflecting prior beliefs and compare them with precomputed posterior weights via an interactive bar plot.
 - **Model Performance Metrics**: Provides the same functionality as in Interface 1, with dropdown-based metric selection and visual emphasis on the best-performing model.  
 - **Table for Predictor Sets**: Also mirrors the functionality of Interface 1 with a tabular comparison of predictors.
+
+## Note
+The five candidate models used in the interfaces were built using the **brms** package in R based on the Student Performance dataset sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/320/student+performance).
+
